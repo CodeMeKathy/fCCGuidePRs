@@ -7,4 +7,4 @@ I am an intellectually curious individual with an insatiable desire to understan
 
 
 
-  [![github-alt][github-img]](https://github.com/example)   [![freeCodeCamp](imgs/freecodecamp.png)](https://www.freecodecamp.org/example)
+  [![github-alt][github-img]](https://github.com/Kathy145/)   [![freeCodeCamp](imgs/freecodecamp.png)](https://www.freecodecamp.org/example)
