@@ -22,7 +22,7 @@ Syntax<sup>1</sup>:
 ```css
 body {
 /* Using a <background-color> */
-background: green;
+background-color: green;
 }
 
 .error {

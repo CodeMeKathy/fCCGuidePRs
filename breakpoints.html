@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./breakpoints.css">
+  <title>Cascading CSS variables</title>
+
 </head>
 <body>
   <nav id="navbar">
     <div class="nav-wrapper">
-      <header>CSS Breakpoints Documentation</header>
+      <header>Cascading CSS Variables</header>
       <ul id="menu" class="main-menu">
         <li>
-          <a href="#top">Introduction</a>
+          <a href="#introduction" class="nav-link">Introduction</a>
         </li>
         <li>
-          <a href="#top">Where to start?</a>
+          <a href="#where_to_start" class="nav-link">Where to start?</a>
         </li>
         <li>
-          <a href="#top">Syntax Examples</a>
+          <a href="#syntax_examples" class="nav-link">Syntax Examples</a>
         </li>
-        <li><a href="#top">References</a>          
+        <li><a href="#reference" class="nav-link">References</a>          
         </li>
       </ul>
     </div>
@@ -29,34 +31,72 @@
   <main id="main-doc" >
     <section class="main-section" id="introduction">
 
+      <header>Cascading CSS Variables</header>
 
       <h3>Introduction</h3>
 
       <p>
-        CSS breakpoints are points where the website content responds according to the device width.  CSS breakpoints are also called media query breakpoints, which can be set with media queries<sup>2</sup>.
-    
-        CSS breakpoints allow one to design the best possible layout on all devices for the user.  There are no set breakpoint rules.  However, there are some industry guiding principles<sup>2</sup>.  
+        Cascading CSS variables officially called custom properties are entities which behave similarly to traditional variables. In that variables allow for data to be stored and updated to reflect new values later<sup>2</sup>.  
     
       </p>
     </section>
 
     <section class="main-section" id="where_to_start">
-      <h3>Where to start?</h3>
+      <h3>Where to Start?</h3>
       <p>
-        Designing with a mobile-first or larger device first approach allows one to decide on the necessary breakpoints scaling up, using mid-width, or scaling down, using max-width, based on page content<sup>2</sup>.
-    
-        Due to the many numbers of devices with varying widths and heights it is common to group devices into five categories: 1) Extra Small, 2) Small, 2) Medium, 4) Large and 5) Extra Large.  Using the right breakpoints provides the user with a truly responsive web experience.  Remember when deciding on what breakpoints to include to take into account one's layout content and the height and width restrictions implemented by individual devices<sup>1</sup>.
+        CSS variables are defined to contain specific values and be reused throughout a document. They are set using custom property notation (e.g., `--main-color: black`) and are accessed using the `var()` function (e.g., `color: var(--main-color)`)<sup>1</sup>. Declare the CSS variable in the `:root` or `body` selectors for global access.
+
+        When maintaining complex CSS documents, it is not only beneficial to use CSS Variables but also smart.  When making future updates instead of searching potential hundreds of lines of code, one only needs to update the necessary CSS variable<sup>1</sup>.
       </p>
+    </section>
+
+    <section class="main-section" id="syntax_examples">
+      <h3>Syntax Examples</h3>
+      
+      <ul>
+        <li>
+            Declaring the variable:
+          <code>
+            :root {
+              --main-bkgnd-color:  #00B8CB;
+            }
+          </code>
+        </li>
+        <li>
+          Declaring the variable:
+          <code>
+              body {
+                background-color: var(--main-bkgnd-color);
+                font-family: 'Raleway', Helvetica, sans-serif;
+              }
+          </code>
+        </li>
+        <li>
+            Declaring the variable: 
+          <code>
+            --custom-name: value
+          </code>
+        </li>
+        <li>              
+          Using the variable:
+          <code>
+              var(--custom-name)
+          </code>
+        </li>
+        <li>
+
+        </li>
+      </ul>
     </section>
 
     <section class="main-section" id="reference">
 
       <h3>References</h3>
       <p>
-          1. [Visit W3School's breakpoints page for more information.](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Set_a_breakpoint)
+        1. [Visit MDN's Cascading CSS variables page for more information.](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)
       </p>
       <p>
-          2. [Projapati, Ananda. "How to use CSS breakpoints to create responsive designs" *FlyWheel*. February 21, 2018. Accessed: October 3, 2018](https://getflywheel.com/layout/css-breakpoints-responsive-design-how-to/)
+        2. [Perna, Maria Antonietta. "A Practical Guide to CSS Variables (Custom Properties)" *sitepoint*. August 01, 2018. Accessed: October 5, 2018](https://www.sitepoint.com/practical-guide-css-variables-custom-properties/)
       </p>
 
     </section>
