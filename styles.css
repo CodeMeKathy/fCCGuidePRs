@@ -1,0 +1,64 @@
+/* CSS */
+
+/*! Overall Styling */
+html, body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+
+    list-style: none;
+    padding-right: 0px;
+    position: relative;
+}
+
+/*! Page Layout */
+
+#main-doc {
+  position: absolute;
+  margin-left: 200px;
+
+}
+
+#main-doc header {
+  font-size: 2.5rem;
+  text-align: left;
+  font-family: 'Lobster', cursive;
+
+}
+
+/*! NavBar */
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  border-right: solid 10px #00b8cb;
+  /* border-right: 20px solid;
+  border-color: salmon !important; */
+  left: 0px;
+}
+
+.nav-wrapper {
+ margin-right: .25rem;
+
+}
+
+#navbar ul{
+  height:88%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+}
+
+
